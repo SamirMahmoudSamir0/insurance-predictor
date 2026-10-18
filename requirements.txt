@@ -1,0 +1,12 @@
+fastapi==0.142.0
+uvicorn[standard]==0.54.0
+python-multipart==0.0.32
+google-genai==2.25.0
+PyMuPDF>=1.26,<1.27
+Pillow>=11,<13
+edge-tts>=7,<8
+gTTS>=2.5,<3
+arabic-reshaper>=3.0,<4
+python-bidi>=0.6,<1
+imageio-ffmpeg>=0.6,<1
+tzdata>=2026.1
