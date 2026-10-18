@@ -1267,21 +1267,14 @@ First classify the goal into one dominant discipline: coding/software, mathemati
 
 Build 4 sequential milestones that fit BOTH the overall timeframe and actual daily/weekly study budget. Allocate realistic minutes to activities and resources; never assign more time than the budget permits. Keep the original roadmap structure: four connected milestones, activities, projects/deliverables, evaluation, quizzes, and review.
 
-DAILY LEARNING IS REQUIRED: In EACH milestone, create 3-7 ordered dailyLessons (depending on total timeframe and realistic daily availability). Each daily lesson must name exactly what to study TODAY: a specific video/lecture topic and searchQuery, a specific book chapter/section or written reference and searchQuery, one practical task, and a same-day quiz built ONLY from the concepts taught in that lesson. Each lesson must contain 3-5 questions, each with four options, correctIndex, hint, explanation, solutionSteps, remediation, conceptTested, questionType. Questions must not test untaught future concepts. Set estimatedMinutes for every component. The total required time for that day's video + reading + practice + quiz/review must be <= the student's daily_minutes. Optional resources do not count against that budget and must be labelled optional. Use exact chapter/section names when reliable; never invent page numbers or editions. The student should not have to search for what to study: provide a precise title and targeted query for each resource, and use a direct URL only when known and reliable.
-
-REAL-WORK READINESS: Include a professionalWorkSimulation for each milestone or a substantial capstone spanning milestones. This must resemble a real task from the target role, not a toy Kaggle-only exercise: describe stakeholder/context, realistic data/artifacts, incomplete or messy requirements, constraints, deliverables, acceptance criteria, testing/quality checks, and a rubric. Prefer real public datasets/repos/documents/APIs with legal access and credible provenance; if real confidential data is unavailable, explicitly use realistic synthetic/sanitized data and explain the limitation. Do not claim access to private company data. Add a finalJobReadinessAssessment with a novel task, explicit rubric, pass threshold, and required artifacts. Distinguish course completion from evidence of job readiness; never guarantee employment.
-
-RESOURCE QUALITY: recommend 3-5 useful, complementary learning resources per milestone, but fit their combined planned use into the student's real time budget. Do NOT prescribe a full course or playlist as the default task. Start with one focused video or a small set of short videos, then a relevant written reference (official docs, textbook section, university notes, trusted tutorial), then a worked example or practice resource. Include different resource types rather than videos alone. Choose based on topic match, learner level, clarity, credibility, recency where relevant, and actual time cost. Each resource must include resourceType (video/reference/practice/documentation/book/chapter/article), estimatedMinutes, provider, title, a specific searchQuery, and why it is worth the learner's time. Explicitly prioritize only the most useful items that fit the session; label optional deeper resources separately and do not count them inside the required session. For low daily time prioritize one short focused video plus one concise reference and a tiny practice task. Do NOT invent direct URLs, video IDs, durations, popularity, or claim verification without evidence. The app opens targeted search results when a direct URL is unavailable.
+RESOURCE QUALITY: recommend 2-4 targeted resources per milestone, ideally at least one focused video/lesson and one written reference/documentation or textbook chapter. Choose based on topic match, learner level, clarity, credibility, and time budget. Prefer official documentation, university/open textbooks, established educational providers, and focused videos over generic long playlists. Each resource should include resourceType (video/reference/course/practice), estimatedMinutes, provider, title, a specific searchQuery, and why it is worth the learner's time. For low daily time prioritize one short focused video and one concise reference; for larger budgets include deeper material. Do NOT invent direct URLs, video IDs, duration, popularity, or claim verification without evidence. The app opens a targeted search when a direct URL is unavailable.
 
 IMPORTANT PROJECT-BASED ROADMAP RULES:
 - Design the roadmap as a connected learning journey, not four unrelated lists. Explain which skills each milestone teaches and how those skills are used in its project.
-- UNIVERSAL PROJECT ENGINE (mandatory): every milestone must have a named, cumulative project or deliverable, not just activities. Each activity must state the exact project component it advances, required submission/artifact, observable acceptance criteria, and how it will be checked. Projects must grow in complexity across milestones and reuse earlier work; include at least one substantial final capstone with a rubric.
-- For coding/software goals, every milestone must include a practical implementation task inside the named project. Open the existing S-TESSERACT Code Lab from the activity action, select the language inferred from the goal (Python/C/C++/Java/JavaScript), and provide runnable requirements, normal/edge/invalid test cases, debugging checkpoints, and reflection on the learner's errors. The AI must review the learner's actual submission and any real runner/test evidence available, score against explicit criteria, explain each deduction, prioritize the first important errors, and offer progressive hints before revealing a full solution. Never claim execution without runner evidence.
-- For non-coding domains, select a suitable native workbench: mathematics/physics problem-solving with shown steps and units; science experiment/simulation or report; engineering design with constraints and diagrams; language writing/listening/speaking artifact; research/case-study evidence; arts/design portfolio artifact. Do not force a code editor into domains where it is inappropriate. Provide a domain-specific rubric, error diagnosis, targeted remediation, and resubmission loop.
-- Every roadmap node must define prerequisites, exact resources, project stages, assessment, feedback, remediation, and mastery gate. A learner should know what to study, what to make, what to submit, how it is scored, what errors to fix, and what unlocks next.
+- For coding/software goals, every milestone must include at least one practical implementation task that becomes part of a named project. Across the 4 milestones, build toward a final portfolio-ready project. Include editor tasks, expected behavior, test cases (normal, edge, and invalid inputs where relevant), debugging checkpoints, and a short reflection on the student's own errors. Do not give the student only passive videos or reading.
 - For mathematics, physics, engineering, languages, research, arts, and all other disciplines, connect each concept to an appropriate artifact or project: worked problem set, simulation, experiment report, design prototype, presentation, case study, writing sample, or other observable output. Do not force programming when it is not relevant.
 - Each activity must say which project/component it advances, what the learner must submit, and how success will be checked. Projects should grow in complexity across milestones and reuse earlier work where appropriate.
-- Include a clear progression in every milestone: (1) a focused video/lesson first, (2) a relevant reference or documentation page, (3) an applied task suited to the discipline, (4) an AI-designed assessment carefully aligned to only the taught concepts, (5) actionable feedback and a step-by-step solution available when the learner chooses to solve/review, then (6) a next action selected from the result: targeted remediation resource, easier practice, another example, or unlock the next milestone. Keep the workload realistic for the stated timeframe and level. The assessment must test understanding and transfer, not trick wording; include a mix of conceptual and practical questions appropriate to the discipline, plausible distractors, correct answer rationale, and explicit mapping to milestone concepts. Do not expose answer keys before the assessment is submitted.
+- Include a clear progression: learn concept -> guided practice -> independent attempt -> test/feedback -> project integration -> review. Keep the workload realistic for the stated timeframe and level.
 
 Discipline rules:
 - coding/software: short implementation labs, runnable deliverables, test cases including edge cases, debugging prompts, tools/libraries only when relevant, a small project; never claim code has been run by this app unless a real runner is connected.
@@ -1294,9 +1287,9 @@ For every milestone provide:
 1) title, timeframe, objective, prerequisites, core concepts.
 2) activityType chosen from Coding Lab, Problem Solver, Language Practice, Engineering Design, Reading & References, Case Study, or Mixed Practice.
 3) 3-5 activities, each with title, exact instructions, deliverable, estimatedMinutes, and optional tools.
-4) 3-5 complementary resources with title, provider, resource type, specific search query, estimated time, required/optional status, and why relevant. Keep required resource use within the daily budget; label optional deep dives clearly.
+4) 1-3 resources with title, provider, specific search query, and why relevant.
 5) 3-5 evaluation criteria with observable evidence; masteryThreshold as integer percent from 60 to 100.
-6) 4-6 meaningful assessment questions (or fewer only when the session is very short), with question, 4 options, correctIndex, explanation, hint, solutionSteps, remediation, conceptTested, and questionType. Aim for balanced medium difficulty: accessible but not trivial; test understanding and application, include realistic scenarios, common mistakes, interpretation/debugging/calculation when relevant, and avoid trick wording. Ensure exactly one defensible best answer. Hints should guide thinking without revealing the answer. Provide concise step-by-step solutions and targeted remediation after submission, not before.
+6) 2-4 quiz questions with question, 4 options, correctIndex, and explanation. Questions must match the milestone concepts.
 7) a miniProject or concrete deliverable, commonMistakes (2-4), reviewPlan, and nextStep.
 
 Return strict JSON only with this schema:
@@ -1304,16 +1297,13 @@ Return strict JSON only with this schema:
  "trackSummary":"...",
  "discipline":"one of the discipline labels above",
  "assumptions":["..."],
- "finalJobReadinessAssessment":{{"task":"...","deliverables":["..."],"rubric":[{{"criterion":"...","weight":25}}],"passThreshold":80}},
  "nodes":[{{
   "title":"...","timeframe":"...","objective":"...","prerequisites":["..."],
   "coreConcepts":["..."],"activityType":"...",
   "activities":[{{"title":"...","instructions":"...","deliverable":"...","estimatedMinutes":30,"tools":["..."]}}],
-  "dailyLessons":[{{"dayNumber":1,"title":"...","objective":"...","estimatedMinutes":180,"video":{{"title":"...","provider":"...","searchQuery":"...","estimatedMinutes":25}},"reading":{{"title":"...","provider":"...","resourceType":"book|chapter|reference|documentation|article","searchQuery":"...","estimatedMinutes":20}},"practice":{{"title":"...","instructions":"...","deliverable":"...","estimatedMinutes":90}},"quizMinutes":20,"quizQuestions":[{{"question":"...","conceptTested":"...","questionType":"conceptual|application|debugging|calculation|case-study","options":["...","...","...","..."],"correctIndex":0,"hint":"...","explanation":"...","solutionSteps":["..."],"remediation":"..."}}]}}],
-  "professionalWorkSimulation":{{"scenario":"...","role":"...","inputsOrData":"...","datasetOrArtifactName":"...","sourceUrl":"...","sourceSearchQuery":"...","licenseOrAccess":"...","fallbackIfUnavailable":"...","constraints":["..."],"deliverables":["..."],"acceptanceCriteria":["..."],"rubric":[{{"criterion":"...","weight":25}}],"dataProvenance":"real-public|synthetic-realistic|open-source-project"}},
-  "resources":[{{"title":"...","provider":"...","resourceType":"video|reference|documentation|book|chapter|article|practice","estimatedMinutes":15,"searchQuery":"...","why":"...","requiredOrOptional":"required|optional"}}],
+  "resources":[{{"title":"...","provider":"...","resourceType":"video|reference|course|practice","estimatedMinutes":15,"searchQuery":"...","why":"..."}}],
   "evaluation":{{"criteria":["..."],"masteryThreshold":80}},
-  "quizQuestions":[{{"question":"...","conceptTested":"...","questionType":"conceptual|application|debugging|calculation|case-study","options":["...","...","...","..."],"correctIndex":0,"hint":"...","explanation":"...","solutionSteps":["..."],"remediation":"..."}}],
+  "quizQuestions":[{{"question":"...","options":["...","...","...","..."],"correctIndex":0,"explanation":"..."}}],
   "miniProject":"...","commonMistakes":["..."],"reviewPlan":"...","nextStep":"...",
   "challengeQuestion":"...","challengeOptions":["...","...","...","..."],"correctIndex":0
  }}]
@@ -1389,55 +1379,7 @@ Return exactly 4 nodes. All content must be internally consistent and appropriat
                 except (TypeError, ValueError):
                     q_index = 0
                 q_index = max(0, min(len(options)-1, q_index))
-                questions.append({"question": str(q["question"]), "options": options, "correctIndex": q_index, "hint": str(q.get("hint") or "ارجع للمفهوم الأساسي، وحدد المعطيات وما الذي يطلبه السؤال قبل اختيار الإجابة."), "explanation": str(q.get("explanation") or "راجع المفهوم الأساسي المرتبط بالسؤال."), "solutionSteps": clean_string_list(q.get("solutionSteps"), 8) if "clean_string_list" in locals() else ([str(x) for x in q.get("solutionSteps", [])[:8]] if isinstance(q.get("solutionSteps"), list) else []), "remediation": str(q.get("remediation") or "راجع المرجع المرتبط بالمفهوم ثم جرّب مثالًا مشابهًا.") , "conceptTested": str(q.get("conceptTested") or title), "questionType": str(q.get("questionType") or "application")})
-            # Normalize a concrete day-by-day curriculum and keep each day's required workload within the learner's daily budget.
-            daily_budget = max(15, min(480, int(payload.daily_minutes)))
-            raw_days = node.get("dailyLessons") if isinstance(node.get("dailyLessons"), list) else []
-            daily_lessons = []
-            for day_idx, day in enumerate(raw_days[:14]):
-                if not isinstance(day, dict):
-                    continue
-                video = day.get("video") if isinstance(day.get("video"), dict) else {}
-                reading = day.get("reading") if isinstance(day.get("reading"), dict) else {}
-                practice = day.get("practice") if isinstance(day.get("practice"), dict) else {}
-                def _mins(obj, default):
-                    try: return max(1, min(daily_budget, int(obj.get("estimatedMinutes", default))))
-                    except (TypeError, ValueError): return default
-                vmins = _mins(video, 20)
-                rmins = _mins(reading, 15)
-                pmins = _mins(practice, 40)
-                try: qmins = max(1, min(max(1, daily_budget - 3), int(day.get("quizMinutes", 15))))
-                except (TypeError, ValueError): qmins = min(15, max(1, daily_budget - 3))
-                # Reserve time for the same-day test, then proportionally fit the learning components.
-                if vmins + rmins + pmins + qmins > daily_budget:
-                    available = max(3, daily_budget - qmins)
-                    total_learn = vmins + rmins + pmins
-                    vmins = max(1, int(available * vmins / total_learn))
-                    rmins = max(1, int(available * rmins / total_learn))
-                    pmins = max(1, available - vmins - rmins)
-                    while vmins + rmins + pmins > available:
-                        if pmins > 1: pmins -= 1
-                        elif rmins > 1: rmins -= 1
-                        else: vmins -= 1
-                if qmins >= daily_budget:
-                    qmins = max(1, daily_budget - vmins - rmins - pmins)
-                day_questions_raw = day.get("quizQuestions") if isinstance(day.get("quizQuestions"), list) else []
-                day_questions = []
-                for dq in day_questions_raw[:5]:
-                    if not isinstance(dq, dict) or not str(dq.get("question") or "").strip() or not isinstance(dq.get("options"), list):
-                        continue
-                    opts = [str(x) for x in dq["options"][:4] if str(x).strip()]
-                    if len(opts) < 2: continue
-                    try: ci = int(dq.get("correctIndex", 0))
-                    except (TypeError, ValueError): ci = 0
-                    ci = max(0, min(len(opts)-1, ci))
-                    day_questions.append({"question": str(dq["question"]), "conceptTested": str(dq.get("conceptTested") or day.get("title") or title), "questionType": str(dq.get("questionType") or "application"), "options": opts, "correctIndex": ci, "hint": str(dq.get("hint") or "حدد الفكرة التي تعلمتها اليوم واستبعد الخيارات غير المتوافقة."), "explanation": str(dq.get("explanation") or "راجع المفهوم المرتبط بالسؤال."), "solutionSteps": [str(x) for x in dq.get("solutionSteps", [])[:8]] if isinstance(dq.get("solutionSteps"), list) else [], "remediation": str(dq.get("remediation") or "راجع مصدر اليوم ثم حل مثالًا مشابهًا.")})
-                # A day without an aligned quiz cannot be considered complete; avoid silently inventing answer keys.
-                try: normalized_day_number = max(1, min(365, int(day.get("dayNumber", day_idx+1) or day_idx+1)))
-                except (TypeError, ValueError): normalized_day_number = day_idx + 1
-                daily_lessons.append({"dayNumber": normalized_day_number, "title": str(day.get("title") or f"اليوم {day_idx+1}: {title}"), "objective": str(day.get("objective") or objective), "estimatedMinutes": min(daily_budget, vmins+rmins+pmins+qmins), "video": {"title": str(video.get("title") or "شرح مركز للموضوع"), "provider": str(video.get("provider") or "مصدر تعليمي"), "searchQuery": str(video.get("searchQuery") or f"{title} {day.get('title','')} tutorial"), "estimatedMinutes": vmins}, "reading": {"title": str(reading.get("title") or "مرجع مكتوب للموضوع"), "provider": str(reading.get("provider") or "توثيق/كتاب تعليمي"), "resourceType": str(reading.get("resourceType") or "reference"), "searchQuery": str(reading.get("searchQuery") or f"{title} {day.get('title','')} documentation chapter"), "estimatedMinutes": rmins}, "practice": {"title": str(practice.get("title") or "تطبيق اليوم"), "instructions": str(practice.get("instructions") or "طبّق مفهوم اليوم على مثال مستقل."), "deliverable": str(practice.get("deliverable") or "حل موثق أو مخرج عملي"), "estimatedMinutes": pmins}, "quizMinutes": qmins, "quizQuestions": day_questions, "lastAttemptScore": None, "passed": False})
-            work_sim = node.get("professionalWorkSimulation") if isinstance(node.get("professionalWorkSimulation"), dict) else {}
-            work_sim_clean = {"scenario": str(work_sim.get("scenario") or f"نفّذ مهمة عملية مرتبطة بهدف {title} تحاكي احتياجًا مهنيًا."), "role": str(work_sim.get("role") or "متدرب في المجال المستهدف"), "inputsOrData": str(work_sim.get("inputsOrData") or "استخدم بيانات عامة موثوقة أو بيانات صناعية موصوفة بوضوح؛ لا تدّع أنها بيانات شركة خاصة."), "datasetOrArtifactName": str(work_sim.get("datasetOrArtifactName") or "لم يُحدد اسم مجموعة بيانات بعينها"), "sourceUrl": str(work_sim.get("sourceUrl") or ""), "sourceSearchQuery": str(work_sim.get("sourceSearchQuery") or f"{goal} public dataset open source real-world project"), "licenseOrAccess": str(work_sim.get("licenseOrAccess") or "تحقق من الترخيص وشروط الوصول قبل الاستخدام"), "fallbackIfUnavailable": str(work_sim.get("fallbackIfUnavailable") or "استخدم بيانات صناعية واقعية مع توضيح أنها ليست بيانات شركة حقيقية"), "constraints": [str(x) for x in work_sim.get("constraints", [])[:8] if isinstance(x, (str,int,float))] if isinstance(work_sim.get("constraints"), list) else [], "deliverables": [str(x) for x in work_sim.get("deliverables", [])[:8] if isinstance(x, (str,int,float))] if isinstance(work_sim.get("deliverables"), list) else [], "acceptanceCriteria": [str(x) for x in work_sim.get("acceptanceCriteria", [])[:8] if isinstance(x, (str,int,float))] if isinstance(work_sim.get("acceptanceCriteria"), list) else [], "rubric": work_sim.get("rubric", [])[:8] if isinstance(work_sim.get("rubric"), list) else [], "dataProvenance": str(work_sim.get("dataProvenance") or "synthetic-realistic")}
+                questions.append({"question": str(q["question"]), "options": options, "correctIndex": q_index, "explanation": str(q.get("explanation") or "راجع المفهوم الأساسي المرتبط بالسؤال.")})
             challenge_question = str(node.get("challengeQuestion") or (questions[0].get("question") if questions else f"ما الفكرة الأساسية التي تعلمتها في {title}؟"))
             challenge_options = node.get("challengeOptions")
             if not isinstance(challenge_options, list) or len(challenge_options) < 2:
@@ -1465,8 +1407,6 @@ Return exactly 4 nodes. All content must be internally consistent and appropriat
                 "prerequisites": clean_string_list(node.get("prerequisites")),
                 "coreConcepts": clean_string_list(node.get("coreConcepts"), 12),
                 "activities": activities,
-                "dailyLessons": daily_lessons,
-                "professionalWorkSimulation": work_sim_clean,
                 "resources": resources,
                 "evaluation": evaluation,
                 "quizQuestions": questions,
@@ -1495,26 +1435,6 @@ Return exactly 4 nodes. All content must be internally consistent and appropriat
             conn.rollback(); conn.close()
             raise ValueError("Could not parse any valid roadmap nodes from the AI response.")
 
-        # Preserve an explicit capstone/job-readiness rubric in the saved roadmap snapshot.
-        raw_job = res_data.get("finalJobReadinessAssessment") if isinstance(res_data.get("finalJobReadinessAssessment"), dict) else {}
-        try: job_threshold = max(60, min(100, int(raw_job.get("passThreshold", 80) or 80)))
-        except (TypeError, ValueError): job_threshold = 80
-        res_data["finalJobReadinessAssessment"] = {
-            "task": str(raw_job.get("task") or f"نفّذ مشروعًا نهائيًا مستقلًا يحقق هدف المسار: {goal}"),
-            "deliverables": [str(x) for x in raw_job.get("deliverables", [])[:10] if isinstance(x, (str,int,float))] if isinstance(raw_job.get("deliverables"), list) else [],
-            "rubric": raw_job.get("rubric", [])[:10] if isinstance(raw_job.get("rubric"), list) else [],
-            "passThreshold": job_threshold
-        }
-        # Attach the capstone to the final milestone so it is visible in the current roadmap UI.
-        if normalized_nodes:
-            normalized_nodes[-1]["finalJobReadinessAssessment"] = res_data["finalJobReadinessAssessment"]
-            last_node = cur.execute("SELECT id, learning_plan FROM blueprint_nodes WHERE user_id=? ORDER BY node_order DESC LIMIT 1", (payload.user_id,)).fetchone()
-            if last_node:
-                try: last_plan = json.loads(last_node["learning_plan"] or "{}")
-                except Exception: last_plan = {}
-                if not isinstance(last_plan, dict): last_plan = {}
-                last_plan["finalJobReadinessAssessment"] = res_data["finalJobReadinessAssessment"]
-                cur.execute("UPDATE blueprint_nodes SET learning_plan=? WHERE id=? AND user_id=?", (json.dumps(last_plan, ensure_ascii=False), last_node["id"], payload.user_id))
         # Save the exact detailed path snapshot before returning success.
         res_data["nodes"] = normalized_nodes
         res_data["studyBudget"] = {"dailyMinutes": max(15, min(480, int(payload.daily_minutes))), "daysPerWeek": max(1, min(7, int(payload.study_days_per_week)))}
@@ -1528,162 +1448,6 @@ Return exactly 4 nodes. All content must be internally consistent and appropriat
     except Exception as e:
         traceback.print_exc()
         return JSONResponse(status_code=500, content={"error": f"Failed: {str(e)}"})
-
-class ProfessionalSimulationSubmission(BaseModel):
-    user_id: int
-    node_id: int
-    submission: str
-
-class DailyRoadmapAssessmentRequest(BaseModel):
-    user_id: int
-    node_id: int
-    day_index: int
-    score: int
-    passed: bool
-    answers: list[dict] = []
-
-@app.post("/api/gps/professional-assessment/submit")
-def submit_professional_roadmap_assessment(payload: ProfessionalSimulationSubmission, request: Request):
-    uid = _require_user(request, payload.user_id)
-    submission = payload.submission.strip()
-    if not submission:
-        raise HTTPException(status_code=400, detail="Submit your work before requesting an evaluation")
-    if len(submission) > 30000:
-        raise HTTPException(status_code=413, detail="Submission is too long; limit is 30,000 characters")
-    conn = get_db()
-    row = conn.execute("SELECT id, title, learning_plan, is_unlocked, is_completed FROM blueprint_nodes WHERE id=? AND user_id=?", (payload.node_id, uid)).fetchone()
-    if not row:
-        conn.close()
-        raise HTTPException(status_code=404, detail="Roadmap node not found")
-    if not row["is_unlocked"] and not row["is_completed"]:
-        conn.close()
-        raise HTTPException(status_code=403, detail="Complete the previous milestone first")
-    try: plan = json.loads(row["learning_plan"] or "{}")
-    except Exception: plan = {}
-    sim = plan.get("professionalWorkSimulation") if isinstance(plan, dict) else None
-    if not isinstance(sim, dict):
-        conn.close()
-        raise HTTPException(status_code=400, detail="No professional work simulation exists for this milestone")
-    rubric = sim.get("rubric", []) if isinstance(sim.get("rubric"), list) else []
-    prompt = f"""You are a careful professional reviewer for an educational work simulation. Evaluate only the submitted evidence against the task and rubric; do not assume missing work was done. Be fair, specific, and actionable. Never claim code was executed or tests were run unless the submission includes verifiable execution evidence. Do not reward copied boilerplate without explaining what is missing. If a deliverable is impossible to judge from text alone, state that limitation.
-Return strict JSON only with keys: score (integer 0-100), criterionScores (array of {{criterion, score, evidence, gap}}), strengths (array of strings), issues (array of strings), nextActions (array of strings), feedback (string), missingDeliverables (array of strings).
-Task title: {row['title']}
-Scenario: {sim.get('scenario','')}
-Role: {sim.get('role','')}
-Inputs/data: {sim.get('inputsOrData','')}
-Dataset/artifact: {sim.get('datasetOrArtifactName','')}
-Constraints: {json.dumps(sim.get('constraints',[]),ensure_ascii=False)}
-Required deliverables: {json.dumps(sim.get('deliverables',[]),ensure_ascii=False)}
-Acceptance criteria: {json.dumps(sim.get('acceptanceCriteria',[]),ensure_ascii=False)}
-Rubric: {json.dumps(rubric,ensure_ascii=False)}
-Student submission:
-{submission}
-"""
-    try:
-        review = generate_ai_json(prompt)
-        try: score = max(0, min(100, int(review.get("score", 0))))
-        except (TypeError, ValueError): score = 0
-        try: threshold = max(60, min(100, int((plan.get("evaluation") or {}).get("masteryThreshold", 80))))
-        except (TypeError, ValueError): threshold = 80
-        passed = score >= threshold and not bool(review.get("missingDeliverables"))
-        attempt = {"score": score, "passed": passed, "submittedAt": datetime.now(APP_TZ).isoformat(), "feedback": str(review.get("feedback") or ""), "criterionScores": review.get("criterionScores", [])[:12] if isinstance(review.get("criterionScores"), list) else [], "strengths": review.get("strengths", [])[:10] if isinstance(review.get("strengths"), list) else [], "issues": review.get("issues", [])[:10] if isinstance(review.get("issues"), list) else [], "nextActions": review.get("nextActions", [])[:10] if isinstance(review.get("nextActions"), list) else [], "missingDeliverables": review.get("missingDeliverables", [])[:10] if isinstance(review.get("missingDeliverables"), list) else []}
-        sim["lastScore"] = score
-        sim["passed"] = passed
-        sim["attemptCount"] = int(sim.get("attemptCount", 0) or 0) + 1
-        sim["lastAttempt"] = attempt
-        history_attempts = sim.get("attempts", []) if isinstance(sim.get("attempts"), list) else []
-        sim["attempts"] = (history_attempts + [attempt])[-5:]
-        plan["professionalWorkSimulation"] = sim
-        milestone_completed = bool(passed and plan.get("milestoneQuizPassed"))
-        order_row = conn.execute("SELECT node_order FROM blueprint_nodes WHERE id=? AND user_id=?", (payload.node_id, uid)).fetchone()
-        if milestone_completed and order_row:
-            conn.execute("UPDATE blueprint_nodes SET is_completed=1 WHERE id=? AND user_id=?", (payload.node_id, uid))
-            conn.execute("UPDATE blueprint_nodes SET is_unlocked=1 WHERE user_id=? AND node_order=?", (uid, int(order_row["node_order"])+1))
-        conn.execute("UPDATE blueprint_nodes SET learning_plan=? WHERE id=? AND user_id=?", (json.dumps(plan, ensure_ascii=False), payload.node_id, uid))
-        conn.execute("CREATE TABLE IF NOT EXISTS roadmap_history (id INTEGER PRIMARY KEY AUTOINCREMENT,user_id INTEGER NOT NULL,goal TEXT NOT NULL DEFAULT '',duration TEXT NOT NULL DEFAULT '',lang TEXT NOT NULL DEFAULT 'ar',roadmap_json TEXT NOT NULL DEFAULT '{}',node_count INTEGER NOT NULL DEFAULT 0,created_at TEXT NOT NULL)")
-        hist = conn.execute("SELECT id, roadmap_json FROM roadmap_history WHERE user_id=? ORDER BY id DESC LIMIT 1", (uid,)).fetchone()
-        if hist:
-            try:
-                snap = json.loads(hist["roadmap_json"] or "{}")
-                snodes = snap.get("nodes", []) if isinstance(snap, dict) else []
-                order = conn.execute("SELECT node_order FROM blueprint_nodes WHERE id=? AND user_id=?", (payload.node_id, uid)).fetchone()
-                idx = int(order["node_order"])-1 if order else -1
-                if 0 <= idx < len(snodes) and isinstance(snodes[idx], dict):
-                    snodes[idx]["professionalWorkSimulation"] = sim
-                    if isinstance(snodes[idx].get("learning_plan"), dict):
-                        snodes[idx]["learning_plan"]["professionalWorkSimulation"] = sim
-                        snodes[idx]["learning_plan"]["milestoneQuizPassed"] = bool(plan.get("milestoneQuizPassed"))
-                    if milestone_completed: snodes[idx]["isCompleted"] = True
-                    conn.execute("UPDATE roadmap_history SET roadmap_json=? WHERE id=? AND user_id=?", (json.dumps(snap, ensure_ascii=False), hist["id"], uid))
-            except Exception:
-                pass
-        conn.commit(); conn.close()
-        return {"success": True, "score": score, "passed": passed, "mastery_threshold": threshold, "milestone_completed": milestone_completed, "review": attempt}
-    except HTTPException:
-        conn.close()
-        raise
-    except Exception as exc:
-        conn.close()
-        traceback.print_exc()
-        raise HTTPException(status_code=502, detail="Could not evaluate the submission right now. Your submitted work was not saved; retry shortly.") from exc
-
-@app.post("/api/gps/daily-assessment-result")
-def save_daily_roadmap_assessment(payload: DailyRoadmapAssessmentRequest, request: Request):
-    uid = _require_user(request, payload.user_id)
-    conn = get_db()
-    row = conn.execute("SELECT id, learning_plan, is_unlocked, is_completed FROM blueprint_nodes WHERE id=? AND user_id=?", (payload.node_id, uid)).fetchone()
-    if not row:
-        conn.close()
-        raise HTTPException(status_code=404, detail="Roadmap node not found")
-    if not row["is_unlocked"] and not row["is_completed"]:
-        conn.close()
-        raise HTTPException(status_code=403, detail="Complete the previous milestone first")
-    try: plan = json.loads(row["learning_plan"] or "{}")
-    except Exception: plan = {}
-    days = plan.get("dailyLessons", []) if isinstance(plan, dict) else []
-    di = int(payload.day_index)
-    if not isinstance(days, list) or di < 0 or di >= len(days):
-        conn.close()
-        raise HTTPException(status_code=400, detail="Invalid daily lesson")
-    if di > 0 and not bool(days[di-1].get("passed")):
-        conn.close()
-        raise HTTPException(status_code=403, detail="Pass the previous daily assessment first")
-    day = days[di]
-    questions = day.get("quizQuestions", []) if isinstance(day, dict) else []
-    # Grade on the server using the stored answer key; do not trust a client-supplied score.
-    answers = payload.answers[:len(questions)] if isinstance(payload.answers, list) else []
-    correct = 0
-    for qi, question in enumerate(questions):
-        try: chosen = int(answers[qi].get("chosenIndex", -1)) if qi < len(answers) else -1
-        except (TypeError, ValueError): chosen = -1
-        try: correct_index = int(question.get("correctIndex", -2))
-        except (TypeError, ValueError): correct_index = -2
-        if chosen == correct_index: correct += 1
-    score = round(correct / max(1, len(questions)) * 100)
-    threshold = 80
-    passed = bool(questions) and score >= threshold
-    day["lastAttemptScore"] = score
-    day["passed"] = passed
-    day["attemptCount"] = int(day.get("attemptCount", 0) or 0) + 1
-    day["lastAttemptAt"] = datetime.now(APP_TZ).isoformat()
-    conn.execute("UPDATE blueprint_nodes SET learning_plan=? WHERE id=? AND user_id=?", (json.dumps(plan, ensure_ascii=False), payload.node_id, uid))
-    # Mirror daily results into the most recent roadmap history snapshot without altering prior history records.
-    conn.execute("CREATE TABLE IF NOT EXISTS roadmap_history (id INTEGER PRIMARY KEY AUTOINCREMENT,user_id INTEGER NOT NULL,goal TEXT NOT NULL DEFAULT '',duration TEXT NOT NULL DEFAULT '',lang TEXT NOT NULL DEFAULT 'ar',roadmap_json TEXT NOT NULL DEFAULT '{}',node_count INTEGER NOT NULL DEFAULT 0,created_at TEXT NOT NULL)")
-    hist = conn.execute("SELECT id, roadmap_json FROM roadmap_history WHERE user_id=? ORDER BY id DESC LIMIT 1", (uid,)).fetchone()
-    if hist:
-        try:
-            snap = json.loads(hist["roadmap_json"] or "{}")
-            snodes = snap.get("nodes", []) if isinstance(snap, dict) else []
-            order = conn.execute("SELECT node_order FROM blueprint_nodes WHERE id=? AND user_id=?", (payload.node_id, uid)).fetchone()
-            idx = int(order["node_order"])-1 if order else -1
-            if 0 <= idx < len(snodes) and isinstance(snodes[idx], dict):
-                snodes[idx]["dailyLessons"] = days
-                if isinstance(snodes[idx].get("learning_plan"), dict): snodes[idx]["learning_plan"]["dailyLessons"] = days
-                conn.execute("UPDATE roadmap_history SET roadmap_json=? WHERE id=? AND user_id=?", (json.dumps(snap, ensure_ascii=False), hist["id"], uid))
-        except Exception:
-            pass
-    conn.commit(); conn.close()
-    return {"success": True, "score": score, "passed": passed, "correct": correct, "total": len(questions), "mastery_threshold": threshold}
 
 class RoadmapProgressRequest(BaseModel):
     user_id: int
@@ -1993,8 +1757,6 @@ def record_result(payload: ResultRequest, request: Request):
     _require_user(request, payload.user_id)
     conn = get_db()
     cur = conn.cursor()
-    progression_blocked_by_work = False
-    milestone_completed = False
     cur.execute("SELECT * FROM users WHERE id = ?", (payload.user_id,))
     user = cur.fetchone()
     if not user:
@@ -2016,39 +1778,27 @@ def record_result(payload: ResultRequest, request: Request):
             new_streak = 1
             
         if payload.node_id > 0:
-            cur.execute("SELECT id, node_order, learning_plan FROM blueprint_nodes WHERE id = ? AND user_id = ?", (payload.node_id, payload.user_id))
+            cur.execute("SELECT id, node_order FROM blueprint_nodes WHERE id = ? AND user_id = ?", (payload.node_id, payload.user_id))
             curr_node = cur.fetchone()
             if not curr_node:
                 conn.close()
                 raise HTTPException(status_code=404, detail="Roadmap node not found")
-            try: node_plan = json.loads(curr_node["learning_plan"] or "{}")
-            except Exception: node_plan = {}
-            work_sim = node_plan.get("professionalWorkSimulation") if isinstance(node_plan, dict) else None
-            work_sim_required = isinstance(work_sim, dict)
-            work_sim_passed = bool(work_sim.get("passed")) if work_sim_required else True
-            if work_sim_required and not work_sim_passed:
-                progression_blocked_by_work = True
-                # Remember the knowledge-test pass so the learner need not repeat it after passing the work simulation.
-                node_plan["milestoneQuizPassed"] = True
-                cur.execute("UPDATE blueprint_nodes SET learning_plan=? WHERE id=? AND user_id=?", (json.dumps(node_plan, ensure_ascii=False), payload.node_id, payload.user_id))
-            if work_sim_passed:
-                milestone_completed = True
-                cur.execute("UPDATE blueprint_nodes SET is_completed = 1 WHERE id = ? AND user_id = ?", (payload.node_id, payload.user_id))
-                cur.execute("UPDATE blueprint_nodes SET is_unlocked = 1 WHERE user_id = ? AND node_order = ?",
-                            (payload.user_id, curr_node["node_order"] + 1))
-                # Mirror quiz completion in the most recent History snapshot.
-                history_row = cur.execute("SELECT id, roadmap_json FROM roadmap_history WHERE user_id=? ORDER BY id DESC LIMIT 1", (payload.user_id,)).fetchone()
-                if history_row:
-                    try:
-                        snapshot = json.loads(history_row["roadmap_json"] or "{}")
-                        snapshot_nodes = snapshot.get("nodes", []) if isinstance(snapshot, dict) else []
-                        idx = int(curr_node["node_order"]) - 1
-                        if isinstance(snapshot_nodes, list) and 0 <= idx < len(snapshot_nodes) and isinstance(snapshot_nodes[idx], dict):
-                            snapshot_nodes[idx]["isCompleted"] = True
-                            cur.execute("UPDATE roadmap_history SET roadmap_json=? WHERE id=? AND user_id=?",
-                                        (json.dumps(snapshot, ensure_ascii=False), history_row["id"], payload.user_id))
-                    except Exception:
-                        pass
+            cur.execute("UPDATE blueprint_nodes SET is_completed = 1 WHERE id = ? AND user_id = ?", (payload.node_id, payload.user_id))
+            cur.execute("UPDATE blueprint_nodes SET is_unlocked = 1 WHERE user_id = ? AND node_order = ?",
+                        (payload.user_id, curr_node["node_order"] + 1))
+            # Mirror quiz completion in the most recent History snapshot.
+            history_row = cur.execute("SELECT id, roadmap_json FROM roadmap_history WHERE user_id=? ORDER BY id DESC LIMIT 1", (payload.user_id,)).fetchone()
+            if history_row:
+                try:
+                    snapshot = json.loads(history_row["roadmap_json"] or "{}")
+                    snapshot_nodes = snapshot.get("nodes", []) if isinstance(snapshot, dict) else []
+                    idx = int(curr_node["node_order"]) - 1
+                    if isinstance(snapshot_nodes, list) and 0 <= idx < len(snapshot_nodes) and isinstance(snapshot_nodes[idx], dict):
+                        snapshot_nodes[idx]["isCompleted"] = True
+                        cur.execute("UPDATE roadmap_history SET roadmap_json=? WHERE id=? AND user_id=?",
+                                    (json.dumps(snapshot, ensure_ascii=False), history_row["id"], payload.user_id))
+                except Exception:
+                    pass
             
     cur.execute("""
         UPDATE users
@@ -2062,7 +1812,7 @@ def record_result(payload: ResultRequest, request: Request):
     
     conn.commit()
     conn.close()
-    return {"success": True, "new_streak": new_streak, "milestone_completed": milestone_completed, "work_simulation_required": progression_blocked_by_work}
+    return {"success": True, "new_streak": new_streak}
 # -----------------------------------------------------------------------------
 # AI Custom Video: PDF -> witty Egyptian-Arabic script -> CINEMATIC narrated MP4
 # -----------------------------------------------------------------------------
@@ -4826,7 +4576,7 @@ body.auth-open {
 </head>
 <body class="text-slate-800 min-h-screen flex flex-row-reverse selection:bg-amber-400 selection:text-slate-900">
 
-  <div id="authModal" class="fixed inset-0 bg-slate-950/70 z-50 auth-visible items-center justify-center p-4" aria-hidden="false">
+  <div id="authModal" class="fixed inset-0 bg-slate-950/70 z-50 hidden items-center justify-center p-4" aria-hidden="true">
     <div class="max-w-md w-full bg-white border border-amber-200 p-8 rounded-3xl shadow-2xl space-y-6">
       <div class="text-center space-y-1">
         <div class="w-16 h-16 bg-gradient-to-tr from-amber-400 to-yellow-300 text-slate-900 rounded-3xl flex items-center justify-center mx-auto text-3xl font-black shadow-lg shadow-amber-300/50 mb-2">
@@ -4878,7 +4628,7 @@ body.auth-open {
       </div>
       <div class="flex items-center gap-2 bg-slate-900 px-3 py-1 rounded-xl border border-slate-800">
         <span class="text-xs">⏳</span>
-        <span id="timerText" class="font-mono font-black text-amber-400 text-sm">60s</span>
+        <span id="timerText" class="font-mono font-black text-amber-400 text-sm">15s</span>
       </div>
       <button onclick="abortExam()" class="text-xs text-slate-500 hover:text-slate-300 px-2 py-1 rounded-lg border border-slate-800" data-t="btn_abort">انسحاب</button>
     </div>
@@ -4891,8 +4641,6 @@ body.auth-open {
       <span id="questionStepTag" class="text-[11px] font-extrabold uppercase tracking-widest text-amber-400 bg-amber-400/10 px-3 py-1 rounded-full border border-amber-400/20">1</span>
       <h3 id="gameQuestionText" class="text-lg md:text-2xl font-black text-slate-100 leading-snug">...</h3>
       <div id="gameOptionsContainer" class="grid grid-cols-1 sm:grid-cols-2 gap-3.5 pt-2 text-right"></div>
-      <div class="pt-2 text-right"><button id="quizHintButton" type="button" onclick="toggleCurrentQuizHint()" class="rounded-xl border border-sky-400/40 bg-sky-400/10 px-4 py-2 text-xs font-black text-sky-200">💡 تلميح يساعدك على التفكير</button><p id="quizHintText" class="hidden mt-3 rounded-xl border border-sky-400/20 bg-sky-400/10 p-3 text-sm leading-relaxed text-sky-100 text-right"></p></div>
-      <div id="quizAnswerFeedback" class="hidden mt-3 rounded-xl border border-slate-700 bg-slate-900 p-3 text-sm text-right"></div>
     </div>
 
     <div class="max-w-2xl mx-auto w-full text-center py-2 text-[11px] font-bold text-slate-500 border-t border-slate-900" data-t="quiz_footer_hint">
@@ -4900,14 +4648,6 @@ body.auth-open {
     </div>
   </div>
 
-  <div id="roadmapAssessmentReview" class="fixed inset-0 z-[120] hidden items-center justify-center bg-slate-950/80 p-3 md:p-6">
-    <div class="w-full max-w-3xl max-h-[90vh] overflow-y-auto rounded-2xl bg-white p-5 text-slate-900 shadow-2xl">
-      <div class="flex items-start justify-between gap-3"><div><h2 class="text-xl font-black">مراجعة الاختبار وخطة التحسين</h2><p id="roadmapAssessmentSummary" class="mt-2 text-sm"></p></div><button type="button" onclick="closeRoadmapAssessmentReview()" class="rounded-lg border px-3 py-2 font-bold">إغلاق</button></div>
-      <p class="mt-3 text-xs text-slate-500">الإجابات والتفسيرات تظهر بعد التسليم فقط. استخدم نقاط التحسين لاختيار ما ستراجعه قبل المحاولة التالية.</p>
-      <div id="roadmapAssessmentDetails" class="mt-4 space-y-2"></div>
-      <button type="button" onclick="closeRoadmapAssessmentReview();switchTab('gps')" class="mt-3 w-full rounded-xl bg-slate-900 px-4 py-3 font-black text-amber-300">العودة إلى الـ Roadmap</button>
-    </div>
-  </div>
   <!-- Mobile sidebar -->
   <div id="mobileSidebarBackdrop" class="fixed inset-0 bg-slate-950/50 backdrop-blur-sm z-30 hidden md:hidden" onclick="closeMobileSidebar()"></div>
 
@@ -4931,6 +4671,7 @@ body.auth-open {
           <button onclick="switchTab('video')" class="nav-item w-full flex items-center justify-end gap-3 px-3.5 py-3 rounded-xl text-slate-600 hover:bg-amber-50 hover:text-amber-700 transition" data-target="video"><span data-t="nav_video">الفيديو السينمائي</span><span class="text-base">🎬</span></button>
            <button onclick="switchTab('studycenter')" class="nav-item w-full flex items-center justify-end gap-3 px-3.5 py-3 rounded-xl text-slate-600 hover:bg-amber-50 hover:text-amber-700 transition" data-target="studycenter"><span>AI Study Center</span><span class="text-base">🧠</span></button>
           <button onclick="switchTab('history')" class="nav-item w-full flex items-center justify-end gap-3 px-3.5 py-3 rounded-xl text-slate-600 hover:bg-amber-50 hover:text-amber-700 transition" data-target="history"><span data-t="nav_history">السجل</span><span class="text-base">🕘</span></button>
+          <button onclick="switchTab('learningstudio')" class="nav-item w-full flex items-center justify-end gap-3 px-3.5 py-3 rounded-xl text-slate-600 hover:bg-amber-50 hover:text-amber-700 transition" data-target="learningstudio"><span>Learning Studio · المعامل</span><span class="text-base">🧪</span></button>
           <button onclick="switchTab('gps')" class="nav-item w-full flex items-center justify-end gap-3 px-3.5 py-3 rounded-xl text-slate-600 hover:bg-amber-50 hover:text-amber-700 transition" data-target="gps"><span data-t="nav_gps">خارطة التعلم</span><span class="text-base">🗺️</span></button>
           <button onclick="switchTab('calendar')" class="nav-item w-full flex items-center justify-end gap-3 px-3.5 py-3 rounded-xl text-slate-600 hover:bg-amber-50 hover:text-amber-700 transition" data-target="calendar"><span data-t="nav_calendar">التقويم</span><span class="text-base">📅</span></button>
           <button onclick="switchTab('leaderboard')" class="nav-item w-full flex items-center justify-end gap-3 px-3.5 py-3 rounded-xl text-slate-600 hover:bg-amber-50 hover:text-amber-700 transition" data-target="leaderboard"><span data-t="nav_leaderboard">المتصدرون</span><span class="text-base">🏆</span></button>
@@ -4970,6 +4711,9 @@ body.auth-open {
         </button>
         <button onclick="switchTab('history')" class="nav-item w-full flex items-center justify-end gap-3 px-3.5 py-2.5 rounded-xl text-slate-600 hover:bg-amber-50 hover:text-amber-700 transition" data-target="history">
           <span data-t="nav_history">السجل</span><span class="text-base">🕘</span>
+        </button>
+        <button onclick="switchTab('learningstudio')" class="nav-item w-full flex items-center justify-end gap-3 px-3.5 py-2.5 rounded-xl text-slate-600 hover:bg-amber-50 hover:text-amber-700 transition" data-target="learningstudio">
+          <span>Learning Studio · المعامل</span><span class="text-base">🧪</span>
         </button>
         <button onclick="switchTab('gps')" class="nav-item w-full flex items-center justify-end gap-3 px-3.5 py-2.5 rounded-xl text-slate-600 hover:bg-amber-50 hover:text-amber-700 transition" data-target="gps">
           <span data-t="nav_gps">خارطة التعلم الذكية (Roadmap)</span><span class="text-base">🧭</span>
@@ -5148,7 +4892,7 @@ body.auth-open {
         </div>
       </div>
 
-      <div id="tab-home" class="tab-content space-y-6">
+      <div id="tab-home" class="tab-content hidden space-y-6">
         <div class="banana-card p-6 md:p-8 rounded-3xl relative overflow-hidden bg-gradient-to-r from-amber-300 via-amber-200 to-yellow-200 text-slate-900">
           <div class="max-w-xl space-y-3">
             <h2 class="text-2xl md:text-3xl font-black leading-tight" data-t="hero_title">
@@ -5282,7 +5026,7 @@ body.auth-open {
       <div id="tab-learningstudio" class="tab-content hidden space-y-6">
         <div class="banana-card p-5 md:p-7 rounded-3xl space-y-5">
           <div class="flex flex-wrap justify-between items-start gap-3 border-b border-amber-100 pb-4">
-            <div><h2 class="text-xl font-black text-slate-900">🧩 التطبيق العملي المرتبط بالمسار</h2><p class="text-xs text-slate-600 mt-2">مساحة واحدة للتطبيق في مجالات مختلفة: برمجة، رياضيات، علوم، لغات، هندسة، بحث، أعمال، وتصميم.</p></div><span class="rounded-xl bg-amber-100 px-3 py-2 text-xs font-black text-amber-900">Practice · Feedback · History</span>
+            <div><h2 class="text-xl font-black text-slate-900">🧪 Learning Studio — بيئة التعلّم والتطبيق</h2><p class="text-xs text-slate-600 mt-2">مساحة واحدة للتطبيق في مجالات مختلفة: برمجة، رياضيات، علوم، لغات، هندسة، بحث، أعمال، وتصميم.</p></div><span class="rounded-xl bg-amber-100 px-3 py-2 text-xs font-black text-amber-900">Practice · Feedback · History</span>
           </div>
           <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
             <section class="rounded-2xl border border-slate-200 bg-white p-4 space-y-3">
@@ -5310,7 +5054,7 @@ print('Hello, S-TESSERACT')"></textarea>
           </div>
           <section id="lsActivityResult" class="hidden rounded-2xl border border-amber-200 bg-amber-50 p-4 space-y-3"></section>
           <section id="lsOutputPanel" class="hidden rounded-2xl border border-slate-700 bg-slate-950 text-white p-4 space-y-2"><div class="font-black text-sm">Output / Feedback</div><pre id="lsOutput" class="whitespace-pre-wrap break-words text-xs leading-relaxed"></pre></section>
-          <section class="rounded-2xl border border-slate-200 bg-white p-4 space-y-3"><div class="flex items-center justify-between gap-2"><h3 class="font-black text-sm">آخر أعمالك</h3><button onclick="lsLoadHistory()" class="rounded-lg bg-slate-100 px-3 py-2 text-xs font-bold">تحديث السجل</button></div><div id="lsRecentHistory" class="space-y-2 text-xs"><p class="text-slate-500">افتح نشاطًا من الـ Roadmap للوصول إلى التطبيق العملي.</p></div></section>
+          <section class="rounded-2xl border border-slate-200 bg-white p-4 space-y-3"><div class="flex items-center justify-between gap-2"><h3 class="font-black text-sm">آخر أعمالك</h3><button onclick="lsLoadHistory()" class="rounded-lg bg-slate-100 px-3 py-2 text-xs font-bold">تحديث السجل</button></div><div id="lsRecentHistory" class="space-y-2 text-xs"><p class="text-slate-500">افتح Learning Studio لتحميل سجل أعمالك.</p></div></section>
         </div>
       </div>
 
@@ -5352,7 +5096,7 @@ print('Hello, S-TESSERACT')"></textarea>
             </div>
             <div class="sm:col-span-2">
               <button id="generateGpsBtn" onclick="generateGpsRoadmap()" class="w-full py-3.5 bg-slate-900 hover:bg-slate-800 text-amber-300 font-black text-xs rounded-xl shadow-md transition flex items-center justify-center gap-2">
-                <span>إنشاء مسار مخصص بموارد وتطبيقات مناسبة</span> 🚀
+                <span>إنشاء المسار المخصص وترشيح الكورسات</span> 🚀
               </button>
             </div>
           </div>
@@ -5513,6 +5257,10 @@ print('Hello, S-TESSERACT')"></textarea>
             <section class="p-4 rounded-2xl border bg-white space-y-3">
               <div class="flex items-center justify-between"><h3 class="font-black">🧭 Learning Roadmaps</h3><span class="text-[10px] text-slate-400">Generated paths</span></div>
               <div id="historyRoadmapsBox" class="space-y-2 text-xs"></div>
+            </section>
+            <section class="p-4 rounded-2xl border bg-white space-y-3">
+              <div class="flex items-center justify-between"><h3 class="font-black">🧪 Learning Studio</h3><span class="text-[10px] text-slate-400">Activities · Code · Feedback</span></div>
+              <div id="historyLearningStudioBox" class="space-y-2 text-xs"></div>
             </section>
             <section class="p-4 rounded-2xl border bg-white space-y-3">
               <div class="flex items-center justify-between"><h3 class="font-black">📝 Generated Exams</h3><span class="text-[10px] text-slate-400">Exam Studio</span></div>
@@ -5760,8 +5508,6 @@ print('Hello, S-TESSERACT')"></textarea>
     let currentUserId = null;
     let isExamActive = false;
     let currentQuizItems = [];
-    let currentQuizReview = [];
-    let currentQuizHintUsed = false;
     let currentQuestionIdx = 0;
     let livesRemaining = 3;
     let comboStreak = 0;
@@ -5971,8 +5717,9 @@ print('Hello, S-TESSERACT')"></textarea>
         startupMenuButton.setAttribute("aria-expanded", "false");
       }
 
-      // Keep the login modal visible until restoreUserSession() confirms a valid session.
-      // This prevents a startup JavaScript error from leaving the user on a blank, unusable page.
+      // Hard-reset all startup overlays. This prevents a stale mobile browser
+      // state or a previous exam/modal state from leaving the whole page dimmed.
+      setAuthModalVisible(false);
       const lockdown = document.getElementById("lockdownOverlay");
       if (lockdown) {
         lockdown.classList.add("hidden");
@@ -6299,20 +6046,9 @@ print('Hello, S-TESSERACT')"></textarea>
             <span class="flex-1"><span class="block text-xs font-black text-slate-800">${escapeHtml(a.title || `نشاط ${i+1}`)} <span class="text-[10px] font-normal text-slate-500">· ${Number(a.estimatedMinutes)||30} دقيقة</span></span>
             <span class="block text-xs text-slate-600 mt-1 whitespace-pre-line">${escapeHtml(a.instructions || '')}</span>
             ${a.deliverable ? `<span class="block text-[11px] text-amber-800 mt-1"><b>المخرج المطلوب:</b> ${escapeHtml(a.deliverable)}</span>` : ''}
-            ${Array.isArray(a.tools) && a.tools.length ? `<span class="block text-[10px] text-slate-500 mt-1"><b>الأدوات:</b> ${escapeHtml(a.tools.join('، '))}</span>` : ''}<button type="button" onclick="openLearningStudioFromRoadmap(${Number(b.id)},${i})" class="mt-2 rounded-lg bg-indigo-50 text-indigo-800 border border-indigo-100 px-3 py-1.5 text-[10px] font-black">فتح مساحة التطبيق لهذا النشاط ↗</button></span></label>`;
+            ${Array.isArray(a.tools) && a.tools.length ? `<span class="block text-[10px] text-slate-500 mt-1"><b>الأدوات:</b> ${escapeHtml(a.tools.join('، '))}</span>` : ''}<button type="button" onclick="openLearningStudioFromRoadmap(${Number(b.id)},${i})" class="mt-2 rounded-lg bg-indigo-50 text-indigo-800 border border-indigo-100 px-3 py-1.5 text-[10px] font-black">فتح في Learning Studio ↗</button></span></label>`;
         }).join('');
-        const dailyLessons = Array.isArray(plan.dailyLessons) ? plan.dailyLessons : [];
-        const dailyLessonsHtml = dailyLessons.map((day, di) => {
-          const priorDay = di > 0 ? dailyLessons[di-1] : null;
-          const lockedDay = !!isLocked || (!!priorDay && !priorDay.passed);
-          const dayQs = Array.isArray(day.quizQuestions) ? day.quizQuestions : [];
-          const v = day.video || {}, rd = day.reading || {}, pr = day.practice || {};
-          const videoUrl = `https://www.youtube.com/results?search_query=${encodeURIComponent(v.searchQuery || day.title || b.title)}`;
-          const readingUrl = `https://www.google.com/search?q=${encodeURIComponent((rd.provider ? 'site:'+rd.provider+' ' : '') + (rd.searchQuery || rd.title || day.title || b.title))}`;
-          const state = day.passed ? `<span class="text-emerald-700 font-bold">✓ اجتزت (${Number(day.lastAttemptScore)||0}%)</span>` : (day.lastAttemptScore != null ? `<span class="text-amber-700 font-bold">آخر نتيجة: ${Number(day.lastAttemptScore)}% — راجع وأعد الاختبار</span>` : '<span class="text-slate-500">لم تختبر بعد</span>');
-          return `<div class="rounded-xl border ${day.passed?'border-emerald-200 bg-emerald-50/40':'border-slate-200 bg-white'} p-3 space-y-2"><div class="flex items-center justify-between gap-2"><b class="text-xs">اليوم ${Number(day.dayNumber)||di+1}: ${escapeHtml(day.title||'درس اليوم')}</b><span class="text-[10px]">${Number(day.estimatedMinutes)||0} دقيقة</span></div><p class="text-xs text-slate-600">${escapeHtml(day.objective||'')}</p><div class="grid grid-cols-1 sm:grid-cols-2 gap-2"><a target="_blank" rel="noopener noreferrer" href="${videoUrl}" class="rounded-lg bg-red-50 text-red-800 p-2 text-xs font-bold">▶ ${escapeHtml(v.title||'فيديو اليوم')} · ${Number(v.estimatedMinutes)||0} د</a><a target="_blank" rel="noopener noreferrer" href="${readingUrl}" class="rounded-lg bg-blue-50 text-blue-800 p-2 text-xs font-bold">📖 ${escapeHtml(rd.title||'قراءة اليوم')} · ${Number(rd.estimatedMinutes)||0} د</a></div><div class="rounded-lg bg-slate-50 p-2 text-xs"><b>${escapeHtml(pr.title||'تطبيق اليوم')}</b><p class="mt-1">${escapeHtml(pr.instructions||'')}</p><p class="mt-1 text-amber-800">المطلوب: ${escapeHtml(pr.deliverable||'مخرج عملي')}</p><span class="text-slate-500">${Number(pr.estimatedMinutes)||0} دقيقة للتطبيق + ${Number(day.quizMinutes)||0} دقيقة للاختبار</span></div><div class="flex flex-wrap items-center justify-between gap-2 text-[10px]">${state}<span>${dayQs.length} أسئلة على محتوى اليوم</span></div>${dayQs.length ? `<button type="button" ${lockedDay?'disabled':''} onclick="launchDailyRoadmapQuiz(${Number(b.id)},${di})" class="w-full rounded-lg px-3 py-2 text-xs font-black ${lockedDay?'bg-slate-100 text-slate-400':'bg-indigo-600 text-white'}">${lockedDay?'🔒 اجتز اختبار اليوم السابق أولًا':(day.passed?'إعادة اختبار اليوم':'بدء اختبار اليوم')}</button>` : '<p class="text-xs text-amber-700">لم يتم إنشاء اختبار يومي صالح لهذا اليوم؛ أعد إنشاء المسار لضمان الاختبار.</p>'}</div>`;
-        }).join('');
-        const resourcesHtml = (Array.isArray(plan.resources) ? plan.resources : []).map(r => { const kind=String(r.resourceType||r.type||'video').toLowerCase(); const query=String(r.searchQuery||r.title||b.title||''); const isVideo=kind.includes('video')||kind.includes('lesson'); const provider=String(r.provider||''); const refQuery=(provider.includes('.')?'site:'+provider+' ':provider+' ')+query; const searchUrl=isVideo?`https://www.youtube.com/results?search_query=${encodeURIComponent(query)}`:`https://www.google.com/search?q=${encodeURIComponent(refQuery)}`; const kindLabel=isVideo?'فيديو / شرح':(kind.includes('practice')?'تطبيق عملي':(kind.includes('course')?'كورس':'مرجع مكتوب')); const mins=Number(r.estimatedMinutes)||0; return `<div class="rounded-xl border border-amber-200 bg-amber-50/70 p-3"><div class="flex flex-wrap items-center gap-2"><span class="text-[9px] rounded-full bg-white border border-amber-200 px-2 py-1 font-bold">${kindLabel}</span>${mins?`<span class="text-[9px] text-slate-500">${mins} دقيقة تقريبًا</span>`:''}</div><div class="font-black text-xs text-slate-800 mt-2">${escapeHtml(r.title || 'مورد تعليمي')}</div><div class="text-[10px] text-slate-500 mt-1">${escapeHtml(r.provider || 'مصدر تعليمي')}</div><p class="text-xs text-slate-600 mt-1">${escapeHtml(r.why || '')}</p><a class="inline-block mt-2 text-[11px] font-bold ${isVideo?'text-red-700':'text-blue-700'} underline" target="_blank" rel="noopener noreferrer" href="${searchUrl}">${isVideo?'افتح بحث الفيديو الموجّه ↗':'افتح بحث المرجع الموجّه ↗'}</a></div>`; }).join('');
+        const resourcesHtml = (Array.isArray(plan.resources) ? plan.resources : []).map(r => { const kind=String(r.resourceType||r.type||'video').toLowerCase(); const query=String(r.searchQuery||r.title||b.title||''); const isVideo=kind.includes('video')||kind.includes('lesson'); const provider=String(r.provider||''); const refQuery=(provider.includes('.')?'site:'+provider+' ':provider+' ')+query; const searchUrl=isVideo?`https://www.youtube.com/results?search_query=${encodeURIComponent(query)}`:`https://www.google.com/search?q=${encodeURIComponent(refQuery)}`; const kindLabel=isVideo?'فيديو / شرح':(kind.includes('practice')?'تطبيق عملي':(kind.includes('course')?'كورس':'مرجع مكتوب')); const mins=Number(r.estimatedMinutes)||0; return `<div class="rounded-xl border border-amber-200 bg-amber-50/70 p-3"><div class="flex flex-wrap items-center gap-2"><span class="text-[9px] rounded-full bg-white border border-amber-200 px-2 py-1 font-bold">${kindLabel}</span>${mins?`<span class="text-[9px] text-slate-500">${mins} دقيقة تقريبًا</span>`:''}</div><div class="font-black text-xs text-slate-800 mt-2">${escapeHtml(r.title || 'مورد تعليمي')}</div><div class="text-[10px] text-slate-500 mt-1">${escapeHtml(r.provider || 'مصدر تعليمي')}</div><p class="text-xs text-slate-600 mt-1">${escapeHtml(r.why || '')}</p><a class="inline-block mt-2 text-[11px] font-bold ${isVideo?'text-red-700':'text-blue-700'} underline" target="_blank" rel="noopener noreferrer" href="${searchUrl}">${isVideo?'ابحث عن الفيديو المناسب ↗':'ابحث عن المرجع ↗'}</a></div>`; }).join('');
         const evaluation = plan.evaluation || {};
         const quiz = Array.isArray(plan.quizQuestions) ? plan.quizQuestions : [];
         return `<article class="p-4 md:p-5 bg-white border-2 ${b.is_completed ? 'border-emerald-400 bg-emerald-50/20' : (b.is_unlocked ? 'border-amber-400 shadow-md' : 'border-slate-200 opacity-80')} rounded-2xl space-y-3 transition">
@@ -6321,11 +6057,8 @@ print('Hello, S-TESSERACT')"></textarea>
           ${plan.prerequisites && plan.prerequisites.length ? `<div class="text-xs"><b>المتطلبات السابقة:</b>${list(plan.prerequisites, 'mt-1 text-slate-600')}</div>` : ''}
           ${plan.coreConcepts && plan.coreConcepts.length ? `<div class="text-xs"><b>المفاهيم الأساسية:</b>${list(plan.coreConcepts, 'mt-1 text-slate-600')}</div>` : ''}
           <div class="h-2 rounded-full bg-slate-100 overflow-hidden"><div class="h-full bg-emerald-500 transition-all" style="width:${progressPct}%"></div></div>
-          ${dailyLessons.length ? `<details open class="rounded-xl border border-indigo-200 bg-indigo-50/30 p-3"><summary class="cursor-pointer font-black text-xs text-indigo-900">📅 الخطة اليومية والاختبارات على محتوى كل يوم (${dailyLessons.filter(d=>d.passed).length}/${dailyLessons.length} أيام مجتازة)</summary><p class="text-[10px] text-slate-600 mt-2 mb-3">كل يوم يحدد فيديو وقراءة وتطبيقًا واختبارًا من نفس محتواه. اجتز اختبار اليوم قبل فتح اختبار اليوم التالي.</p><div class="space-y-3 mt-2">${dailyLessonsHtml}</div></details>` : ''}
-          ${plan.professionalWorkSimulation ? `<details class="rounded-xl border border-emerald-200 p-3"><summary class="cursor-pointer font-black text-xs text-emerald-900">🧰 محاكاة مهمة عمل حقيقية</summary><div class="mt-3 space-y-2 text-xs"><p><b>السياق:</b> ${escapeHtml(plan.professionalWorkSimulation.scenario||'')}</p><p><b>المدخلات/البيانات:</b> ${escapeHtml(plan.professionalWorkSimulation.inputsOrData||'')}</p><p><b>اسم البيانات/الأثر المطلوب:</b> ${escapeHtml(plan.professionalWorkSimulation.datasetOrArtifactName||'')}</p>${plan.professionalWorkSimulation.sourceUrl && (String(plan.professionalWorkSimulation.sourceUrl).startsWith('https://') || String(plan.professionalWorkSimulation.sourceUrl).startsWith('http://')) ? `<p><a class="text-blue-700 underline" target="_blank" rel="noopener noreferrer" href="${escapeHtml(plan.professionalWorkSimulation.sourceUrl)}">فتح المصدر المحدد ↗</a></p>` : `<p><a class="text-blue-700 underline" target="_blank" rel="noopener noreferrer" href="https://www.google.com/search?q=${encodeURIComponent(plan.professionalWorkSimulation.sourceSearchQuery||plan.professionalWorkSimulation.datasetOrArtifactName||b.title)}">البحث عن البيانات/المشروع ↗</a></p>`}<p><b>الترخيص والوصول:</b> ${escapeHtml(plan.professionalWorkSimulation.licenseOrAccess||'')}</p><p><b>البديل عند عدم توفر المصدر:</b> ${escapeHtml(plan.professionalWorkSimulation.fallbackIfUnavailable||'')}</p>${list(plan.professionalWorkSimulation.constraints,'text-slate-600')}<p><b>التسليمات:</b></p>${list(plan.professionalWorkSimulation.deliverables,'text-slate-600')}<p><b>معايير القبول:</b></p>${list(plan.professionalWorkSimulation.acceptanceCriteria,'text-slate-600')}<p class="text-[10px] text-slate-500">مصدر البيانات: ${escapeHtml(plan.professionalWorkSimulation.dataProvenance||'غير محدد')} — المحاكاة ليست ضمانًا للتوظيف.</p><label class="block font-bold mt-3">سلّم حلك أو تقريرك أو ملخص الكود والاختبارات</label><textarea id="professionalSubmission-${Number(b.id)}" rows="7" maxlength="30000" class="w-full rounded-xl border border-emerald-200 p-3 text-xs" placeholder="اشرح قراراتك، أرفق النتائج المهمة، واكتب ما نفذته وما لم تستطع التحقق منه..."></textarea><button type="button" onclick="submitProfessionalSimulation(${Number(b.id)})" class="w-full rounded-xl bg-emerald-700 text-white font-black text-xs p-3">إرسال المهمة للتقييم المهني بالـ AI</button><div id="professionalResult-${Number(b.id)}" class="text-xs mt-2">${plan.professionalWorkSimulation.lastAttempt ? `آخر نتيجة: ${Number(plan.professionalWorkSimulation.lastScore)||0}% — ${plan.professionalWorkSimulation.passed?'اجتزت المهمة المهنية':'تحتاج إلى تحسين'}<p class="mt-1">${escapeHtml(plan.professionalWorkSimulation.lastAttempt.feedback||'')}</p>` : 'لم يتم تقييم تسليم مهني بعد.'}</div></div></details>` : ''}
-          ${plan.finalJobReadinessAssessment ? `<details class="rounded-xl border border-violet-200 bg-violet-50/30 p-3"><summary class="cursor-pointer font-black text-xs text-violet-900">🏁 التقييم النهائي للاستعداد المهني</summary><div class="mt-3 space-y-2 text-xs"><p>${escapeHtml(plan.finalJobReadinessAssessment.task||'')}</p><p><b>حد الاجتياز:</b> ${Number(plan.finalJobReadinessAssessment.passThreshold)||80}%</p><p><b>المخرجات المطلوبة:</b></p>${list(plan.finalJobReadinessAssessment.deliverables,'text-slate-600')}<p><b>معايير التقييم:</b></p>${list((plan.finalJobReadinessAssessment.rubric||[]).map(r=>typeof r==='string'?r:`${r.criterion||'معيار'} (${Number(r.weight)||0}%)`),'text-slate-600')}<p class="text-[10px] text-slate-500">إنهاء المسار لا يضمن التوظيف؛ هذا التقييم يقيس أدلة عملية على المهارات.</p></div></details>` : ''}
           <details open class="rounded-xl border border-slate-200 p-3"><summary class="cursor-pointer font-black text-xs text-slate-800">🧩 أنشطة عملية قابلة للتأشير (${done.length}/${activities.length})</summary><div class="space-y-2 mt-3">${activityHtml || '<p class="text-xs text-slate-500">لا توجد أنشطة مفصلة لهذا المسار القديم. أنشئ مسارًا جديدًا للحصول على الأنشطة التفصيلية.</p>'}</div><p id="roadmapProgressMsg-${Number(b.id)}" class="text-[10px] text-emerald-700 mt-2"></p></details>
-          <details class="rounded-xl border border-slate-200 p-3"><summary class="cursor-pointer font-black text-xs text-slate-800">📚 المراجع المقترحة</summary><p class="text-[10px] text-slate-500 mt-2">روابط البحث موجّهة إلى الموضوع والمزوّد؛ راجع نتيجة البحث نفسها لأن الموقع لا يدّعي التحقق المباشر من كل فيديو أو إصدار كتاب.</p><div class="space-y-2 mt-3">${resourcesHtml || `<a href="${ytSearchUrl}" target="_blank" rel="noopener" class="text-xs font-bold text-red-700 underline">ابحث عن مصدر مناسب ↗</a>`}</div></details>
+          <details class="rounded-xl border border-slate-200 p-3"><summary class="cursor-pointer font-black text-xs text-slate-800">📚 المراجع المقترحة</summary><div class="space-y-2 mt-3">${resourcesHtml || `<a href="${ytSearchUrl}" target="_blank" rel="noopener" class="text-xs font-bold text-red-700 underline">ابحث عن كورس مناسب ↗</a>`}</div></details>
           <details class="rounded-xl border border-slate-200 p-3"><summary class="cursor-pointer font-black text-xs text-slate-800">✅ التقييم ومعيار الإتقان</summary><div class="mt-3 text-xs text-slate-700"><p class="mb-2"><b>المعيار المطلوب:</b> ${Number(evaluation.masteryThreshold)||80}%</p>${list(evaluation.criteria, 'text-slate-600')}</div>${plan.miniProject ? `<div class="mt-3 rounded-lg bg-indigo-50 p-3 text-xs text-indigo-900"><b>المشروع/المخرج:</b> ${escapeHtml(plan.miniProject)}</div>` : ''}</details>
           ${quiz.length ? `<details class="rounded-xl border border-slate-200 p-3"><summary class="cursor-pointer font-black text-xs text-slate-800">🧠 أسئلة المراجعة (${quiz.length})</summary><div class="space-y-3 mt-3">${quiz.map((q,qi)=>`<div class="rounded-xl bg-slate-50 p-3"><p class="font-bold text-xs text-slate-800">${qi+1}. ${escapeHtml(q.question || '')}</p>${list(q.options, 'mt-2 text-xs text-slate-600')}${b.is_completed ? `<details class="mt-2"><summary class="cursor-pointer text-[11px] font-bold text-amber-800">عرض الإجابة والتفسير</summary><p class="mt-2 text-xs text-emerald-800">الإجابة: ${escapeHtml((q.options||[])[Number(q.correctIndex)||0] || 'غير محددة')}</p><p class="text-xs text-slate-600">${escapeHtml(q.explanation || '')}</p></details>` : '<p class="mt-2 text-[10px] text-slate-400">اجتز اختبار المرحلة لعرض الإجابة والتفسير.</p>'}</div>`).join('')}</div></details>` : ''}
           ${plan.commonMistakes && plan.commonMistakes.length ? `<details class="rounded-xl border border-slate-200 p-3"><summary class="cursor-pointer font-black text-xs text-slate-800">⚠️ أخطاء شائعة</summary>${list(plan.commonMistakes, 'mt-3 text-xs text-slate-600')}</details>` : ''}
@@ -6363,7 +6096,7 @@ print('Hello, S-TESSERACT')"></textarea>
 
       const btn = document.getElementById('generateGpsBtn');
       btn.disabled = true;
-      btn.innerHTML = `<span>جاري بناء مسار مناسب لوقتك واختيار مصادر وتطبيقات...</span> ⏳`;
+      btn.innerHTML = `<span>جاري بناء المسار الذكي وترشيح الكورسات...</span> ⏳`;
 
       try {
         const res = await fetch("/api/gps/generate-roadmap", {
@@ -6391,44 +6124,8 @@ print('Hello, S-TESSERACT')"></textarea>
         console.error(e);
       } finally {
         btn.disabled = false;
-        btn.innerHTML = `<span>إنشاء مسار مخصص بموارد وتطبيقات مناسبة</span> 🚀`;
+        btn.innerHTML = `<span>إنشاء المسار المخصص وترشيح الكورسات</span> 🚀`;
       }
-    }
-
-    async function submitProfessionalSimulation(nodeId) {
-      const input=document.getElementById(`professionalSubmission-${Number(nodeId)}`);
-      const output=document.getElementById(`professionalResult-${Number(nodeId)}`);
-      const submission=(input?.value||'').trim();
-      if(!submission) return alert('اكتب التسليم المطلوب قبل الإرسال.');
-      if(submission.length>30000) return alert('التسليم أطول من الحد المسموح.');
-      if(output) output.textContent='جاري تقييم المهمة وفق معايير القبول والـ rubric...';
-      try {
-        const res=await fetch('/api/gps/professional-assessment/submit',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({user_id:Number(currentUserId),node_id:Number(nodeId),submission})});
-        const data=await readApiResponse(res);
-        if(!res.ok||!data.success) throw new Error(data.detail||data.error||'تعذر تقييم المهمة');
-        const review=data.review||{};
-        const lines=[`الدرجة: ${data.score}% (المطلوب ${data.mastery_threshold}%)`,data.passed?'اجتزت المهمة المهنية.':'لم تصل لمعيار الإتقان بعد.',data.milestone_completed?'اجتزت اختبار المرحلة ومحاكاة العمل؛ تم فتح المرحلة التالية.':'',review.feedback||'',...(review.strengths||[]).map(x=>'نقطة قوة: '+x),...(review.issues||[]).map(x=>'تحتاج تحسين: '+x),...(review.nextActions||[]).map(x=>'الخطوة التالية: '+x),...(review.missingDeliverables||[]).map(x=>'مخرج ناقص: '+x)];
-        if(output) output.textContent=lines.join('\n');
-        const node=(window.__activeRoadmapNodes||[]).find(n=>Number(n.id)===Number(nodeId));
-        if(node&&node.learning_plan&&node.learning_plan.professionalWorkSimulation){Object.assign(node.learning_plan.professionalWorkSimulation,{lastScore:data.score,passed:!!data.passed,lastAttempt:review});}
-        renderRoadmapCards(window.__activeRoadmapNodes||[]);
-        loadDashboardData();
-      } catch(e) { if(output) output.textContent='تعذر التقييم: '+e.message; }
-    }
-
-    let activeDailyAssessment = null;
-    function launchDailyRoadmapQuiz(nodeId, dayIndex) {
-      const node = (window.__activeRoadmapNodes || []).find(n => Number(n.id) === Number(nodeId));
-      if (!node) return;
-      const plan = node.learning_plan && typeof node.learning_plan === 'object' ? node.learning_plan : {};
-      const days = Array.isArray(plan.dailyLessons) ? plan.dailyLessons : [];
-      const day = days[Number(dayIndex)];
-      if (!day || !Array.isArray(day.quizQuestions) || !day.quizQuestions.length) return alert('لا يوجد اختبار صالح لهذا اليوم.');
-      if (Number(dayIndex) > 0 && !days[Number(dayIndex)-1]?.passed) return alert('اجتز اختبار اليوم السابق أولًا.');
-      activeDailyAssessment = {nodeId:Number(nodeId), dayIndex:Number(dayIndex), dayNumber:Number(day.dayNumber)||Number(dayIndex)+1};
-      activeBlueprintNodeId = 0;
-      const items = day.quizQuestions.map(q => ({...q, question:q.question, options:q.options, correctIndex:Number(q.correctIndex)||0, hint:q.hint||'فكّر في محتوى اليوم وحدد المفهوم الذي يختبره السؤال.'}));
-      startGamifiedQuiz(items, 10, 0.8);
     }
 
     function launchBlueprintChallengeById(nodeId) {
@@ -6440,7 +6137,7 @@ print('Hello, S-TESSERACT')"></textarea>
       activeBlueprintNodeId = node.id;
       const plan = node.learning_plan && typeof node.learning_plan === 'object' ? node.learning_plan : {};
       const questions = Array.isArray(plan.quizQuestions) ? plan.quizQuestions.filter(q => q && q.question && Array.isArray(q.options) && q.options.length >= 2) : [];
-      const items = questions.length ? questions.map(q => ({...q, question:q.question, options:q.options, correctIndex:Number(q.correctIndex)||0, hint:q.hint||'حدد المفهوم الذي يختبره السؤال واستبعد الاختيارات غير المتوافقة.'})) : [{
+      const items = questions.length ? questions.map(q => ({question:q.question, options:q.options, correctIndex:Number(q.correctIndex)||0})) : [{
         question: node.challenge_question,
         options: node.challenge_options,
         correctIndex: node.correct_index
@@ -6599,9 +6296,7 @@ print('Hello, S-TESSERACT')"></textarea>
     }
 
     function startGamifiedQuiz(items, rewardXP = 50, passThreshold = 0) {
-      currentQuizItems = Array.isArray(items) ? items.map(q => ({...q})) : [];
-      currentQuizReview = [];
-      currentQuizHintUsed = false;
+      currentQuizItems = Array.isArray(items) ? items : [];
       currentQuestionIdx = 0;
       currentCorrectAnswers = 0;
       currentPassThreshold = Math.max(0, Math.min(1, Number(passThreshold) || 0));
@@ -6632,9 +6327,6 @@ print('Hello, S-TESSERACT')"></textarea>
       const q = currentQuizItems[currentQuestionIdx];
       document.getElementById('questionStepTag').innerText = `${currentQuestionIdx + 1} / ${currentQuizItems.length}`;
       document.getElementById('gameQuestionText').innerText = q.question;
-      const hintText=document.getElementById('quizHintText'); if(hintText){hintText.textContent=q.hint||'فكّر في المفهوم الذي يختبره السؤال، ثم استبعد الاختيارات التي لا تفسّر الحالة.';hintText.classList.add('hidden');}
-      const hintButton=document.getElementById('quizHintButton'); if(hintButton){hintButton.disabled=false;hintButton.classList.remove('opacity-50');hintButton.textContent='💡 تلميح يساعدك على التفكير';}
-      const feedback=document.getElementById('quizAnswerFeedback'); if(feedback){feedback.classList.add('hidden');feedback.textContent='';}
 
       const colorSchemes = [
         { bg: "from-blue-600 to-cyan-600", symbol: "▲" },
@@ -6651,7 +6343,7 @@ print('Hello, S-TESSERACT')"></textarea>
         </button>
       `).join('');
 
-      questionTimer = 60;
+      questionTimer = 20;
       clearInterval(timerInterval);
       updateTimerUI();
 
@@ -6665,39 +6357,48 @@ print('Hello, S-TESSERACT')"></textarea>
       }, 1000);
     }
 
-    function toggleCurrentQuizHint() {
-      const q=currentQuizItems[currentQuestionIdx]; if(!q) return;
-      const box=document.getElementById('quizHintText'); const btn=document.getElementById('quizHintButton');
-      if(!box||!btn) return;
-      box.classList.toggle('hidden');
-      if(!box.classList.contains('hidden')) { btn.textContent='💡 تم عرض التلميح'; btn.disabled=true; btn.classList.add('opacity-50'); q.hintUsed=true; }
-    }
-
     function updateTimerUI() {
       document.getElementById('timerText').innerText = `${questionTimer}s`;
-      const pct = (questionTimer / 60) * 100;
+      const pct = (questionTimer / 20) * 100;
       document.getElementById('timerBar').style.width = `${pct}%`;
     }
 
     function handleOptionChoice(chosenIdx) {
       clearInterval(timerInterval);
       const q = currentQuizItems[currentQuestionIdx];
-      const correct = chosenIdx === Number(q.correctIndex);
-      currentQuizReview.push({question:q.question, options:q.options||[], chosenIndex:chosenIdx, correctIndex:Number(q.correctIndex)||0, correct, hintUsed:!!q.hintUsed, explanation:q.explanation||'', solutionSteps:Array.isArray(q.solutionSteps)?q.solutionSteps:[], remediation:q.remediation||'', conceptTested:q.conceptTested||''});
-      if (correct) { currentCorrectAnswers++; comboStreak++; document.getElementById('comboText').innerText = `${comboStreak + 1}x`; }
-      else { comboStreak = 0; document.getElementById('comboText').innerText = `1x`; }
-      const feedback=document.getElementById('quizAnswerFeedback');
-      if(feedback){feedback.classList.remove('hidden');feedback.innerHTML=`<b class="${correct?'text-emerald-300':'text-amber-300'}">${correct?'إجابة صحيحة':'تم تسجيل إجابتك'}</b><p class="mt-1 text-slate-300 text-xs">${correct?'أكمل بنفس التركيز.':'مش مشكلة؛ هنراجع السبب بعد نهاية الاختبار.'}</p>`;}
-      document.querySelectorAll('#gameOptionsContainer button').forEach((b,i)=>{b.disabled=true;b.classList.add('opacity-70');if(i===Number(q.correctIndex))b.classList.add('ring-2','ring-emerald-300');});
-      setTimeout(()=>{currentQuestionIdx++;renderCurrentGameQuestion();},850);
+
+      if (chosenIdx === q.correctIndex) {
+        currentCorrectAnswers++;
+        comboStreak++;
+        document.getElementById('comboText').innerText = `${comboStreak + 1}x`;
+      } else {
+        comboStreak = 0;
+        livesRemaining--;
+        updateLivesDisplay();
+        document.getElementById('comboText').innerText = `1x`;
+
+        if (livesRemaining <= 0) {
+          alert(currentLang === 'ar' ? "انتهت المحاولات، راجع الكورس وحاول مرة ثانية." : "Out of lives, review the course and try again.");
+          abortExam();
+          return;
+        }
+      }
+
+      currentQuestionIdx++;
+      setTimeout(renderCurrentGameQuestion, 400);
     }
 
     function handleTimeOut() {
-      clearInterval(timerInterval);
-      const q=currentQuizItems[currentQuestionIdx];
-      if(q) currentQuizReview.push({question:q.question,options:q.options||[],chosenIndex:-1,correctIndex:Number(q.correctIndex)||0,correct:false,timeout:true,hintUsed:!!q.hintUsed,explanation:q.explanation||'',solutionSteps:Array.isArray(q.solutionSteps)?q.solutionSteps:[],remediation:q.remediation||'',conceptTested:q.conceptTested||''});
-      currentQuestionIdx++;
-      renderCurrentGameQuestion();
+      livesRemaining--;
+      comboStreak = 0;
+      updateLivesDisplay();
+      if (livesRemaining <= 0) {
+        alert(currentLang === 'ar' ? "انتهى الوقت!" : "Time's up!");
+        abortExam();
+      } else {
+        currentQuestionIdx++;
+        renderCurrentGameQuestion();
+      }
     }
 
     async function finishGamifiedExam(passed) {
@@ -6709,32 +6410,10 @@ print('Hello, S-TESSERACT')"></textarea>
       abortExam();
       if (roadmapAssessment) {
         const scorePct = Math.round(currentCorrectAnswers / Math.max(1, currentQuizItems.length) * 100);
-        const summary=(currentLang === 'ar' ? `نتيجتك: ${currentCorrectAnswers}/${currentQuizItems.length} (${scorePct}%). ` : `Score: ${currentCorrectAnswers}/${currentQuizItems.length} (${scorePct}%). `) + (passed ? (currentLang === 'ar' ? 'اجتزت المرحلة!' : 'Milestone passed!') : (currentLang === 'ar' ? 'لم تصل لمعيار الإتقان بعد؛ راجع نقاط التحسين ثم أعد المحاولة.' : 'Mastery threshold not reached; review improvement points and retry.'));
-        const reviewHtml=currentQuizReview.map((r,i)=>`<div class="rounded-xl border ${r.correct?'border-emerald-200':'border-amber-200'} p-3 mb-2"><b>${i+1}. ${escapeHtml(r.question)}</b><p class="mt-1 text-xs">إجابتك: ${r.chosenIndex<0?'لم تتم الإجابة':escapeHtml((r.options||[])[r.chosenIndex]||'')}</p><p class="text-xs text-emerald-800 mt-1">الإجابة الصحيحة: ${escapeHtml((r.options||[])[r.correctIndex]||'—')}</p><p class="text-xs mt-2">${escapeHtml(r.explanation||'')}</p>${(r.solutionSteps||[]).length?`<ol class="list-decimal pr-5 mt-2 text-xs">${r.solutionSteps.map(st=>`<li>${escapeHtml(st)}</li>`).join('')}</ol>`:''}<p class="text-xs text-blue-800 mt-2">الخطوة المقترحة: ${escapeHtml(r.remediation||'راجع المفهوم المرتبط بالسؤال.')}</p></div>`).join('');
-        const reviewModal=document.getElementById('roadmapAssessmentReview');
-        if(reviewModal){document.getElementById('roadmapAssessmentSummary').textContent=summary;document.getElementById('roadmapAssessmentDetails').innerHTML=reviewHtml;reviewModal.classList.remove('hidden');reviewModal.classList.add('flex');} else { alert(summary); }
-      }
-      if (activeDailyAssessment) {
-        const daily = {...activeDailyAssessment};
-        activeDailyAssessment = null;
-        try {
-          const saveRes = await fetch('/api/gps/daily-assessment-result', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({user_id:Number(currentUserId), node_id:daily.nodeId, day_index:daily.dayIndex, score:Math.round(currentCorrectAnswers/Math.max(1,currentQuizItems.length)*100), passed:passed, answers:currentQuizReview.map(r=>({chosenIndex:r.chosenIndex, correct:!!r.correct, hintUsed:!!r.hintUsed}))})});
-          const saveData = await readApiResponse(saveRes);
-          if (!saveRes.ok || !saveData.success) throw new Error(saveData.detail || 'Could not save daily result');
-          const node = (window.__activeRoadmapNodes||[]).find(n=>Number(n.id)===daily.nodeId);
-          if (node && node.learning_plan && Array.isArray(node.learning_plan.dailyLessons)) {
-            node.learning_plan.dailyLessons[daily.dayIndex].lastAttemptScore = saveData.score;
-            node.learning_plan.dailyLessons[daily.dayIndex].passed = !!saveData.passed;
-          }
-          const reviewModal=document.getElementById('roadmapAssessmentReview');
-          if(reviewModal){const summary=document.getElementById('roadmapAssessmentSummary');if(summary)summary.textContent=`اختبار اليوم ${daily.dayNumber}: ${saveData.score}% — ${saveData.passed?'اجتزت اختبار اليوم':'راجع المحتوى ثم أعد المحاولة'}`;}
-          renderRoadmapCards(window.__activeRoadmapNodes||[]);
-        } catch (e) { console.error('Daily assessment persistence failed',e); alert('لم نتمكن من حفظ نتيجة اختبار اليوم. حاول مرة أخرى.'); }
-        loadDashboardData();
-        return;
+        alert((currentLang === 'ar' ? `نتيجتك: ${currentCorrectAnswers}/${currentQuizItems.length} (${scorePct}%). ` : `Score: ${currentCorrectAnswers}/${currentQuizItems.length} (${scorePct}%). `) + (passed ? (currentLang === 'ar' ? 'اجتزت المرحلة!' : 'Milestone passed!') : (currentLang === 'ar' ? 'لم تصل لمعيار الإتقان بعد؛ راجع الأنشطة وحاول مرة أخرى.' : 'Mastery threshold not reached; review activities and retry.')));
       }
       const earnedXP = passed ? 50 : 0;
-      const resultResponse = await fetch("/api/user/record-result", {
+      await fetch("/api/user/record-result", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ 
@@ -6744,17 +6423,9 @@ print('Hello, S-TESSERACT')"></textarea>
           node_id: activeBlueprintNodeId 
         })
       });
-      let progressionResult = {};
-      try { progressionResult = await readApiResponse(resultResponse); } catch (_) {}
-      if (passed && progressionResult.work_simulation_required) {
-        const modalSummary=document.getElementById('roadmapAssessmentSummary');
-        if(modalSummary) modalSummary.textContent += ' اجتزت اختبار الفهم، لكن لن تُفتح المرحلة التالية قبل اجتياز محاكاة العمل وتسليم مخرجاتها.';
-      }
       activeBlueprintNodeId = 0;
       loadDashboardData();
     }
-
-    function closeRoadmapAssessmentReview(){const el=document.getElementById('roadmapAssessmentReview');if(el){el.classList.add('hidden');el.classList.remove('flex');}}
 
     function abortExam() {
       clearInterval(timerInterval);
@@ -7653,23 +7324,11 @@ print('Hello, S-TESSERACT')"></textarea>
 
     function switchTab(t) {
       const allowed = new Set(["studyroom","home","video","studycenter","exams","history","gps","learningstudio","calendar","leaderboard","account"]);
-      // Keep navigation side effects isolated: a missing mobile helper or a
-      // stale inline handler must never leave every application panel hidden.
       if (!allowed.has(t)) t = "home";
-      if (window.innerWidth < 768 && typeof closeMobileSidebar === "function") {
-        try { closeMobileSidebar(); } catch (navError) { console.warn("Mobile navigation reset failed", navError); }
-      }
-      const panels = Array.from(document.querySelectorAll(".tab-content"));
-      panels.forEach(e => e.classList.add("hidden"));
+      if (window.innerWidth < 768) closeMobileSidebar();
+      document.querySelectorAll(".tab-content").forEach(e => e.classList.add("hidden"));
       const target = document.getElementById("tab-" + t) || document.getElementById("tab-home");
-      if (target) {
-        target.classList.remove("hidden");
-        target.removeAttribute("aria-hidden");
-        target.style.removeProperty("display");
-      } else {
-        const home = document.getElementById("tab-home");
-        if (home) { home.classList.remove("hidden"); home.style.removeProperty("display"); }
-      }
+      if (target) target.classList.remove("hidden");
 
       document.querySelectorAll(".nav-item").forEach(b => {
         const active = b.dataset.target === t;
