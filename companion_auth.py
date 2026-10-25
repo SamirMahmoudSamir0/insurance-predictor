@@ -140,14 +140,17 @@ def check_password_with_lockout(conn, user, password: str, tz, audit=None) -> No
             conn.commit()
         return
     fails = (user["failed_login_count"] or 0) + 1
-    if fails >= MAX_FAILED_ATTEMPTS:
+    locked_now = fails >= MAX_FAILED_ATTEMPTS
+    if locked_now:
         conn.execute("UPDATE users SET failed_login_count=0, locked_until=? WHERE id=?",
                      ((now + timedelta(minutes=LOCK_MINUTES)).isoformat(), user["id"]))
-        if audit:
-            audit(user["id"], "login_locked", f"after {MAX_FAILED_ATTEMPTS} failed attempts")
     else:
         conn.execute("UPDATE users SET failed_login_count=? WHERE id=?", (fails, user["id"]))
     conn.commit()
+    # The audit log opens its OWN database connection. It must run only AFTER the commit above: while this connection still holds
+    # the write lock, the second connection would wait for it (30 s) and freeze every other request.
+    if locked_now and audit:
+        audit(user["id"], "login_locked", f"after {MAX_FAILED_ATTEMPTS} failed attempts")
     raise HTTPException(status_code=401, detail={"code": "invalid_credentials"})
 
 
